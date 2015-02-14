@@ -29,6 +29,9 @@ gem 'spring',        group: :development
 #Paperclip for PDFs
 gem 'paperclip', '~> 4.2'
 
+#View PDFs
+gem 'pdf-reader'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
