@@ -14,10 +14,18 @@
  *= require_self
  */
 
+.content {
+	text-align: left;
+	font-size: .75em;
+	padding: 3em;
+	margin-left: 20em;
+	width: 60%;
+
+}
 main {
-	padding: 2em;
-	text-align: center;
-	font-size: 2em;
+    padding: 2em;
+    text-align: center;
+    font-size: 2em;
 }
 
 @import "bootstrap-sprockets";
@@ -25,28 +33,19 @@ main {
 
 
 main {
-	background-color: black;
+    background-color: black;
 }
 
 
 .jumbotron-custom {
-	padding-top: 3em;
-	background-color: black;
-	color: white;
-	padding-bottom: 6em;
+    padding-top: 3em;
+    background-color: black;
+    color: white;
+    padding-bottom: 6em;
 }
 
 
 
-.content {
-	text-align: left;
-	font-size: .75em;
-	background-color: white;
-	padding: 3em;
-	margin-left: 20em;
-	width: 60%;
-
-}
 
 
 .sidebar-nav {
@@ -97,8 +96,22 @@ main {
 
 
 #about {
-	width: 70%;
+    width: 70%;
+    text-indent: 50px;
+    padding-top: 2.5em;
+    background-color: #F1F1F1;
+    line-height: 1.5em;
+    border-radius: 25px;
 }
+
+#quote {
+    background-color:#F1F1F1;
+    font-size: 1.2em;
+    text-indent: 0;
+    line-height: 1.2em;
+}
+
+
 
 .scrollable-menu {
     height: auto;
@@ -113,6 +126,8 @@ main {
 
     width: 80%;
 
-    background-color: yellow;
+    background-color: black;
 }
+
+
 
