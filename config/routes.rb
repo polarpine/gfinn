@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'guitar/guitar1'
+
+  get 'guitar/guitar2'
+
   get 'twelve/one'
 
   get 'twelve/two'
@@ -34,6 +38,8 @@ Rails.application.routes.draw do
   get 'home/forchildren'
 
   get 'home/misccollection'
+
+  get 'home/gifts'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

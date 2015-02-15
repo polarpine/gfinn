@@ -16,6 +16,10 @@ class HomeController < ApplicationController
   def misccollection
   end
 
+  def gifts
+  end
+  
+
 
 
  
