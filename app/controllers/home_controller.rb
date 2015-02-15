@@ -18,6 +18,12 @@ class HomeController < ApplicationController
 
   def gifts
   end
+
+  def more
+  end
+
+  def inspirations
+  end
   
 
 

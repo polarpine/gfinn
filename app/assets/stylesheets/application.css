@@ -106,3 +106,13 @@ main {
     overflow-x: hidden;
 }
 
+#inspire {
+    margin: 5em;
+    margin-top: 3em;
+
+
+    width: 80%;
+
+    background-color: yellow;
+}
+
