@@ -7,6 +7,15 @@ class HomeController < ApplicationController
   def about
   end
 
+  def topten
+  end
+
+  def forchildren
+  end
+
+  def misccollection
+  end
+
 
 
  
