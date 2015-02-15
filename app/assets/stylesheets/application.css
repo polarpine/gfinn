@@ -30,22 +30,73 @@ main {
 
 
 .jumbotron-custom {
+	padding-top: 3em;
 	background-color: black;
-	color: white
+	color: white;
+	padding-bottom: 6em;
 }
 
-#horses {
-	background-image: url(http://www.emerald-vision.com/wp-content/uploads/rinning_horses_print_black_and_white_ireland.jpg);
-}
+
 
 .content {
 	text-align: left;
 	font-size: .75em;
 	background-color: white;
 	padding: 3em;
+	margin-left: 20em;
+	width: 60%;
 
 }
 
 
+.sidebar-nav {
+    position: absolute;
+    top: 2em;
+    width: 150px;
+    margin: 0;
+    padding-top: 5%;
+    list-style: none;
+}
 
+.sidebar-nav li {
+    text-align: left;
+    padding-top: 2em;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+
+#about {
+	width: 70%;
+}
 

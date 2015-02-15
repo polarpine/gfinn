@@ -5,126 +5,133 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-  	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
 
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-        <li><%= link_to "About",   '/home/about' %></li>
-        <li><%= link_to "Top Ten",   '/home/topten' %></li>
-        <li><%= link_to "Children",   '/home/forchildren' %></li>
-        <li><%= link_to "Miscellaneous Collections",   '/home/misccollection' %></li>
-        <li><%= link_to "Gifts",   '/home/gifts' %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The 12 Volumes<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/twelve/one">Hymn I</a></li>
-            <li><a href="/twelve/two">Hymn II</a></li>
-            <li><a href="/twelve/three">Hymn III</a></li>
-            <li class="divider"></li>
-            <li><a href="/twelve/four">Hymn IV</a></li>
-            <li><a href="/twelve/five">Hymn V</a></li>
-            <li><a href="/twelve/six">Hymn VI</a></li>
-            <li class="divider"></li>
-            <li><a href="/twelve/seven">Hymn VII</a></li>
-            <li><a href="/twelve/eight">Hymn VIII</a></li>
-            <li><a href="/twelve/nine">Hymn IX</a></li>
-            <li class="divider"></li>
-            <li><a href="/twelve/ten">Hymn X</a></li>
-            <li><a href="/twelve/eleven">Hymn XI</a></li>
-            <li><a href="/twelve/twelve">Hymn XII</a></li>
-          </ul>
-        </li>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+          <li><%= link_to "About",   '/home/about' %></li>
+          <li><%= link_to "Top Ten List",   '/home/topten' %></li>
+          <li><%= link_to "Miscellaneous Collections",   '/home/misccollection' %></li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Guitar<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/guitar/guitar1">Guitar One</a></li>
-            <li><a href="/guitar/guitar2">Guitar Two</a></li>
-          </ul>
-        </li>
-                  <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Miscellaneous Singles<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/singles/s1">One</a></li>
-            <li><a href="/singles/s2">single</a></li>
-            <li><a href="/singles/s3">single</a></li>
-            <li><a href="/singles/s4">single</a></li>
-            <li><a href="/singles/s5">single</a></li>
-            <li><a href="/singles/s6">single</a></li>
-            <li><a href="/singles/s7">single</a></li>
-            <li><a href="/singles/s8">single</a></li>
-            <li><a href="/singles/s9">single</a></li>
-            <li><a href="/singles/s10">single</a></li>
-            <li><a href="/singles/s11">single</a></li>
-            <li><a href="/singles/s12">single</a></li>
-            <li><a href="/singles/s13">single</a></li>
-            <li><a href="/singles/s14">single</a></li>
-            <li><a href="/singles/s15">single</a></li>
-            <li><a href="/singles/s16">single</a></li>
-            <li><a href="/singles/s17">single</a></li>
-            <li><a href="/singles/s18">single</a></li>
-            <li><a href="/singles/s19">single</a></li>
-            <li><a href="/singles/s20">single</a></li>
-            <li><a href="/singles/s21">single</a></li>
-            <li><a href="/singles/s22">single</a></li>
-            <li><a href="/singles/s23">single</a></li>
-            <li><a href="/singles/s24">single</a></li>
-            <li><a href="/singles/s25">single</a></li>
-            <li><a href="/singles/s26">single</a></li>
-            <li><a href="/singles/s27">single</a></li>
-            <li><a href="/singles/s28">single</a></li>
-            <li><a href="/singles/s29">single</a></li>
-            <li><a href="/singles/s30">single</a></li>
-            <li><a href="/singles/s31">single</a></li>
-            <li><a href="/singles/s32">single</a></li>
-          </ul>
-        </li>
-      </ul>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The 12 Volumes<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/twelve/one">1 Hymns</a></li>
+              <li><a href="/twelve/two">2 Hymns</a></li>
+              <li><a href="/twelve/three">3 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/four">4 Hymns</a></li>
+              <li><a href="/twelve/five">5 Hymns</a></li>
+              <li><a href="/twelve/six">6 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/seven">7 Hymns</a></li>
+              <li><a href="/twelve/eight">8 Hymns</a></li>
+              <li><a href="/twelve/nine">9 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/ten">10 Hymns</a></li>
+              <li><a href="/twelve/eleven">11 Hymns</a></li>
+              <li><a href="/twelve/twelve">12 Hymns</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Guitar<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/guitar/guitar2">Hymns from Dad w quitar annotation</a></li>
+              <li><a href="/guitar/guitar1">Hymns Dad's favorites mostly w guitar annotation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Miscellaneous Singles<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/singles/s1">A Shelter in the Time of Storm</a></li>
+              <li><a href="/singles/s2">Standing on the Promises</a></li>
+              <li><a href="/singles/s3">Just as I Am</a></li>
+              <li><a href="/singles/s4">I've Reached the Land of Corne and Wine</a></li>
+              <li><a href="/singles/s5">I Need Thee Every Hour</a></li>
+              <li><a href="/singles/s6">I Need Thee Every Hour--</a></li>
+              <li><a href="/singles/s7">I Heard the Voice of Jesus Say</a></li>
+              <li><a href="/singles/s8">Hold to God's Unchanging Hand</a></li>
+              <li><a href="/singles/s9">His Banner over Me Is Love</a></li>
+              <li><a href="/singles/s10">Adeste Fideles</a></li>
+              <li><a href="/singles/s11">Amazing Grace, How Sweet the Sound</a></li>
+              <li><a href="/singles/s12">Blessed Assurance</a></li>
+              <li><a href="/singles/s13">Blessed Be the Tie That Binds</a></li>
+              <li><a href="/singles/s14">He is Able to Deliver Thee</a></li>
+              <li><a href="/singles/s15">Will There Be Any Stars</a></li>
+              <li><a href="/singles/s16">Whispering Hope</a></li>
+              <li><a href="/singles/s17">What a Friend We Have in Jesus</a></li>
+              <li><a href="/singles/s18">We Shall See the King Some Day</a></li>
+              <li><a href="/singles/s19">There's a Great Day Coming</a></li>
+              <li><a href="/singles/s20">Some Day the Silver Cord Will Break</a></li>
+              <li><a href="/singles/s21">Sing Them Over Again to Me</a></li>
+              <li><a href="/singles/s22">Saviour, Like a Sheperd</a></li>
+              <li><a href="/singles/s23">Safe in the Arms of Jesus</a></li>
+              <li><a href="/singles/s24">Safe in the Arms of Jesus</a></li>
+              <li><a href="/singles/s25">Pastores a Belen</a></li>
+              <li><a href="/singles/s26">O to Be Like Thee!</a></li>
+              <li><a href="/singles/s27">O Master, Let Me Walk with Thee</a></li>
+              <li><a href="/singles/s28">My Hope Is Built on Nothing Less</a></li>
+              <li><a href="/singles/s29">Low in the Grave He Lay</a></li>
+              <li><a href="/singles/s30">Joy Dawned Again on Easter Day</a></li>
+              <li><a href="/singles/s31">Jesus Loves Me</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Specific Double-sided Hymns<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/singles/s1">One</a></li>
+              <li><a href="/singles/s2">single</a></li>
+              <li><a href="/singles/s3">single</a></li>
+              <li><a href="/singles/s4">single</a></li>
+              <li><a href="/singles/s5">single</a></li>
+              <li><a href="/singles/s6">single</a></li>
+              <li><a href="/singles/s7">single</a></li>
+              <li><a href="/singles/s8">single</a></li>
+              <li><a href="/singles/s9">single</a></li>
+              <li><a href="/singles/s10">single</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>   
 
 
 
+  <main>
 
-      <ul class="nav navbar-nav navbar-right">
+   <%= yield %>
+ </main>
+ <footer>
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+     <li><%= link_to "Special Hymns Sent to Children",   '/home/forchildren' %></li>
+     <li><%= link_to "Gifts That are Offered Through Hymns",   '/home/gifts' %></li>
+     <li>
+      <a href="#">Where to Go For More</a>
+    </li>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More Hymns? <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Hymns</a></li>
-            <li><a href="#">More Hymns</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">And even More Hymns</a></li>
-            <li><a href="#">More Hymns</a></li>
-            <li><a href="#">More Hymns</a></li>
-            <li><a href="#">More Hymns</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>   
-
-
-
-<main>
-
-	<%= yield %>
-</main>
+  </ul>
+</div>
+<!-- /#sidebar-wrapper -->
+</footer>
 </body>
 </html>
