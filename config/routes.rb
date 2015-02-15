@@ -1,4 +1,68 @@
 Rails.application.routes.draw do
+  get 'singles/s1'
+
+  get 'singles/s2'
+
+  get 'singles/s3'
+
+  get 'singles/s4'
+
+  get 'singles/s5'
+
+  get 'singles/s6'
+
+  get 'singles/s7'
+
+  get 'singles/s8'
+
+  get 'singles/s9'
+
+  get 'singles/s10'
+
+  get 'singles/s11'
+
+  get 'singles/s12'
+
+  get 'singles/s13'
+
+  get 'singles/s14'
+
+  get 'singles/s15'
+
+  get 'singles/s16'
+
+  get 'singles/s17'
+
+  get 'singles/s18'
+
+  get 'singles/s19'
+
+  get 'singles/s20'
+
+  get 'singles/s21'
+
+  get 'singles/s22'
+
+  get 'singles/s23'
+
+  get 'singles/s24'
+
+  get 'singles/s25'
+
+  get 'singles/s26'
+
+  get 'singles/s27'
+
+  get 'singles/s28'
+
+  get 'singles/s29'
+
+  get 'singles/s30'
+
+  get 'singles/s31'
+
+  get 'singles/s32'
+
   get 'guitar/guitar1'
 
   get 'guitar/guitar2'
