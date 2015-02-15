@@ -19,3 +19,33 @@ main {
 	text-align: center;
 	font-size: 2em;
 }
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+main {
+	background-color: black;
+}
+
+
+.jumbotron-custom {
+	background-color: black;
+	color: white
+}
+
+#horses {
+	background-image: url(http://www.emerald-vision.com/wp-content/uploads/rinning_horses_print_black_and_white_ireland.jpg);
+}
+
+.content {
+	text-align: left;
+	font-size: .75em;
+	background-color: white;
+	padding: 3em;
+
+}
+
+
+
+
