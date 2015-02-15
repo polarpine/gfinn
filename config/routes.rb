@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  get 'twelve/one'
+
+  get 'twelve/two'
+
+  get 'twelve/three'
+
+  get 'twelve/four'
+
+  get 'twelve/five'
+
+  get 'twelve/six'
+
+  get 'twelve/seven'
+
+  get 'twelve/eight'
+
+  get 'twelve/nine'
+
+  get 'twelve/ten'
+
+  get 'twelve/eleven'
+
+  get 'twelve/twelve'
+
   get 'static_pages/home'
 
   get 'home/about' 
