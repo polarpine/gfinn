@@ -2,13 +2,194 @@
 <html>
 <head>
   <title>Gfinn</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
-<body>
-<main>
-<%= yield %>
-</main>
+<body id='all'>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+          <li><%= link_to "About",   '/home/about' %></li>
+          <li><%= link_to "Top Ten List",   '/home/topten' %></li>
+          <li><%= link_to "Miscellaneous Collections",   '/home/misccollection' %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The 12 Volumes<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/twelve/one">1 Hymns</a></li>
+              <li><a href="/twelve/two">2 Hymns</a></li>
+              <li><a href="/twelve/three">3 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/four">4 Hymns</a></li>
+              <li><a href="/twelve/five">5 Hymns</a></li>
+              <li><a href="/twelve/six">6 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/seven">7 Hymns</a></li>
+              <li><a href="/twelve/eight">8 Hymns</a></li>
+              <li><a href="/twelve/nine">9 Hymns</a></li>
+              <li class="divider"></li>
+              <li><a href="/twelve/ten">10 Hymns</a></li>
+              <li><a href="/twelve/eleven">11 Hymns</a></li>
+              <li><a href="/twelve/twelve">12 Hymns</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Guitar<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/guitar/guitar2">Hymns from Dad with Guitar Annotation</a></li>
+              <li><a href="/guitar/guitar1">Hymns Dad's favorites mostly with Guitar Annotation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Miscellaneous Singles<span class="caret"></span></a>
+            <ul class="dropdown-menu scrollable-menu" role="menu">
+              <li><a href="/singles/s1">A Shelter in the Time of Storm</a></li>
+              <li><a href="/singles/s2">Standing on the Promises</a></li>
+              <li><a href="/singles/s3">Just as I Am</a></li>
+              <li><a href="/singles/s4">I've Reached the Land of Corne and Wine</a></li>
+              <li><a href="/singles/s5">I Need Thee Every Hour</a></li>
+              <li><a href="/singles/s6">I Need Thee Every Hour--</a></li>
+              <li><a href="/singles/s7">I Heard the Voice of Jesus Say</a></li>
+              <li><a href="/singles/s8">Hold to God's Unchanging Hand</a></li>
+              <li><a href="/singles/s9">His Banner over Me Is Love</a></li>
+              <li><a href="/singles/s10">Adeste Fideles</a></li>
+              <li><a href="/singles/s11">Amazing Grace, How Sweet the Sound</a></li>
+              <li><a href="/singles/s12">Blessed Assurance</a></li>
+              <li><a href="/singles/s13">Blessed Be the Tie That Binds</a></li>
+              <li><a href="/singles/s14">He is Able to Deliver Thee</a></li>
+              <li><a href="/singles/s15">Will There Be Any Stars</a></li>
+              <li><a href="/singles/s16">Whispering Hope</a></li>
+              <li><a href="/singles/s17">What a Friend We Have in Jesus</a></li>
+              <li><a href="/singles/s18">We Shall See the King Some Day</a></li>
+              <li><a href="/singles/s19">There's a Great Day Coming</a></li>
+              <li><a href="/singles/s20">Some Day the Silver Cord Will Break</a></li>
+              <li><a href="/singles/s21">Sing Them Over Again to Me</a></li>
+              <li><a href="/singles/s22">Saviour, Like a Sheperd</a></li>
+              <li><a href="/singles/s23">Safe in the Arms of Jesus</a></li>
+              <li><a href="/singles/s24">Safe in the Arms of Jesus</a></li>
+              <li><a href="/singles/s25">Pastores a Belen</a></li>
+              <li><a href="/singles/s26">O to Be Like Thee!</a></li>
+              <li><a href="/singles/s27">O Master, Let Me Walk with Thee</a></li>
+              <li><a href="/singles/s28">My Hope Is Built on Nothing Less</a></li>
+              <li><a href="/singles/s29">Low in the Grave He Lay</a></li>
+              <li><a href="/singles/s30">Joy Dawned Again on Easter Day</a></li>
+              <li><a href="/singles/s31">Jesus Loves Me</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Specific Double-sided Hymns<span class="caret"></span></a>
+            <ul class="dropdown-menu scrollable-menu" role="menu">
+              <li><a href="/doubles/d1">Amazing Grace</a></li>
+              <li><a href="/doubles/d10">Because He Lives</a></li>
+              <li><a href="/doubles/d11">Bring Your Vessels, Not A Few</a></li>
+              <li><a href="/doubles/d12">Come Unto Me</a></li>
+              <li><a href="/doubles/d13">Constantly Abiding</a></li>
+              <li><a href="/doubles/d14">Count Your Blessings--</a></li>
+              <li><a href="/doubles/d15">Count Your Blessings</a></li>
+              <li><a href="/doubles/d16">Everybody Ought To Know</a></li>
+              <li><a href="/doubles/d17">Faith Is The Victory</a></li>
+              <li><a href="/doubles/d18">Follow On</a></li>
+              <li><a href="/doubles/d19">For A Thousand Tongues</a></li>
+              <li><a href="/doubles/d2">From Every Stormy Wind That Blows</a></li>
+              <li><a href="/doubles/d20">God Is So Good</a></li>
+              <li><a href="/doubles/d21">Greater Is He That Is In Me</a></li>
+              <li><a href="/doubles/d22">He Giveth More Grace</a></li>
+              <li><a href="/doubles/d23">He Ransomed Me</a></li>
+              <li><a href="/doubles/d24">Hear Our Prayer O Lord</a></li>
+              <li><a href="/doubles/d25">Heaven Came Down And Glory Filled My Soul</a></li>
+              <li><a href="/doubles/d26">Heaven's Jubilee</a></li>
+              <li><a href="/doubles/d27">His Eye Is On The Sparrow</a></li>
+              <li><a href="/doubles/d28">How Comforting Is Jesus Name</a></li>
+              <li><a href="/doubles/d29">How Sweet The Name Of Jesus Sounds</a></li>
+              <li><a href="/doubles/d3">I Am Coming Lord</a></li>
+              <li><a href="/doubles/d30">I Bowed On My Knees And Cried Holy</a></li>
+              <li><a href="/doubles/d31">I Heard The Bells On Christmas Day</a></li>
+              <li><a href="/doubles/d32">I Know Who Holds Tomorrow</a></li>
+              <li><a href="/doubles/d33">I'll Go Where You Want Me To Go</a></li>
+              <li><a href="/doubles/d34">If Jesus Goes With Me</a></li>
+              <li><a href="/doubles/d35">In The Cross Of Christ</a></li>
+              <li><a href="/doubles/d36">It's Just Like His Great Love</a></li>
+              <li><a href="/doubles/d37">It's Real</a></li>
+              <li><a href="/doubles/d38">Jesus Calls Us</a></li>
+              <li><a href="/doubles/d39">Jesus Hold My Hand</a></li>
+              <li><a href="/doubles/d4">Leave It There--</a></li>
+              <li><a href="/doubles/d40">Leave It There</a></li>
+              <li><a href="/doubles/d41">Let's Just Praise The Lord</a></li>
+              <li><a href="/doubles/d42">Living By Faith</a></li>
+              <li><a href="/doubles/d43">Majesty</a></li>
+              <li><a href="/doubles/d44">Master, The Tempest Is Raging</a></li>
+              <li><a href="/doubles/d45">My Tribute</a></li>
+              <li><a href="/doubles/d46">Never Alone--</a></li>
+              <li><a href="/doubles/d47">Never Alone</a></li>
+              <li><a href="/doubles/d48">O What A Wonderful Day</a></li>
+              <li><a href="/doubles/d49">One Day</a></li>
+              <li><a href="/doubles/d5">Only Trust Him</a></li>
+              <li><a href="/doubles/d50">Peace Be Still</a></li>
+              <li><a href="/doubles/d51">Revive Us Again</a></li>
+              <li><a href="/doubles/d52">Still Sweeter Every Day--</a></li>
+              <li><a href="/doubles/d53">Still Sweeter Every Day</a></li>
+              <li><a href="/doubles/d54">Surely Goodness And Mercy--</a></li>
+              <li><a href="/doubles/d55">Surely Goodness And Mercy</a></li>
+              <li><a href="/doubles/d56">Sweet, Sweet Spirit</a></li>
+              <li><a href="/doubles/d57">Sweeter Than The Day Before</a></li>
+              <li><a href="/doubles/d58">The Family Of God</a></li>
+              <li><a href="/doubles/d59">The First Noel</a></li>
+              <li><a href="/doubles/d6">The Great Physician</a></li>
+              <li><a href="/doubles/d60">The Love Of God</a></li>
+              <li><a href="/doubles/d61">The Meeting In The Air</a></li>
+              <li><a href="/doubles/d62">The Old Fashioned Meeting</a></li>
+              <li><a href="/doubles/d63">The Song of The Soul Set Free</a></li>
+              <li><a href="/doubles/d64">Victory In Jesus</a></li>
+              <li><a href="/doubles/d65">We Have Come Into His House</a></li>
+              <li><a href="/doubles/d66">When He Cometh</a></li>
+              <li><a href="/doubles/d67">When I Survey the Wondrous Cross</a></li>
+              <li><a href="/doubles/d69">When They Ring The Golden Bells--</a></li>
+              <li><a href="/doubles/d68">When They Ring The Golden Bells</a></li>
+              <li><a href="/doubles/d9">When We See Christ</a></li>
+              <li><a href="/doubles/d8">Wonderful Grace Of Jesus</a></li>
+              <li><a href="/doubles/d7">Wonderful Words Of Life</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>   
+
+
+
+  <main>
+
+   <%= yield %>
+ </main>
+ <footer>
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+     <li><%= link_to "Special Hymns Sent to Children",   '/home/forchildren' %></li>
+     <li><%= link_to "Gifts That are Offered Through Hymns",   '/home/gifts' %></li>
+    <li><%= link_to "Where to Go for More",   '/home/more' %></li>
+     <li><%= link_to "Inspirations",   '/home/inspirations' %></li>
+
+  </ul>
+</div>
+<!-- /#sidebar-wrapper -->
+</footer>
 </body>
 </html>
