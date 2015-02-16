@@ -1,1 +1,1 @@
-# gfinn
+This repository contains a copy of the website for The Gerald Finn Hymn Collection.
